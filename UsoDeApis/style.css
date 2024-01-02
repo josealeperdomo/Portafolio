@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #040224;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 30;
+}
+
+img:hover,button:hover{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    gap: 40px;
+}
+
+nav div button{
+    padding: 10px;
+    font-size: larger;
+}
+
+aside{
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    direction: rtl;
+    height: 100vh;
+    width: 350px;
+    background-color: #040224;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 40;
+}
+
+aside::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px; 
+    display: none;
+}
+
+.tituloA{
+    font-size: 30px;
+    color: #44a09d;
+    -webkit-text-fill-color: #00b5cc;
+    -webkit-text-stroke: 1px #b6e136;
+}
+
+aside img{
+    width: 250px;
+}
+
+.nombresA{
+    color: #44a09d;
+    position: relative;
+    top: 250px;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.25px black;
+}
+
+aside button{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -250px;
+    left: -109px;
+    border: none;
+    background-image: url('https://pnghq.com/wp-content/uploads/download-heart-png-full-hd-free-transparent-image-99479.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+}
+
+.equis{
+    width: 30px;
+    position: absolute;
+    left: 0;
+}
+
+#seccionF{
+    display: none;
+    justify-items: center;
+    grid-template-columns: repeat(1,1fr);
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    min-height: 4450px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 120px 90px 10px 90px;
+    background-color: black;
+}
+
+.titulo1{
+    font-size: 50px;
+    color: #44a09d;
+    -webkit-text-fill-color: #00b5cc;
+    -webkit-text-stroke: 1.5px #b6e136;
+}
+
+.nombresS1{
+    position: relative;
+    top: 250px;
+}
+
+.nombres{
+    font-size: 20px;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.25px black;
+}
+
+#seccion{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    grid-template-columns: repeat(1,1fr);
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #043a41; 
+    border: 5px solid #4a6300;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenP{
+    width:250px;
+    border-radius: 15px;
+}
+
+.pantalla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+}
+
+.ficha{
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+    flex-direction: column;
+    z-index: 10;
+    background-color: #043a41;
+    border: 2px solid #4a6300;
+    width: 250px;
+    gap: 15px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #44a09d;
+    -webkit-text-fill-color: #00b5cc;
+    -webkit-text-stroke: 0.4px #b6e136;
+}
+
+.nombresF{
+    font-size: 25px;
+    color: #44a09d;
+    -webkit-text-fill-color: #00b5cc;
+    -webkit-text-stroke: 1px #b6e136;
+}
+
+.ficha img{
+    width: 200px;
+}
+
+.ficha button{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: none;
+    background-color: transparent;
+    background-image: url('https://icones.pro/wp-content/uploads/2021/08/icone-x-verte.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#seccion .desfavoritos{
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: -98px;
+    top: -250px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+}
+
+#paginero{
+    display: flex;
+    overflow-x: hidden;
+}
+
+#seccion2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: hidden;
+}
+
+#paginacion{
+    display: flex;
+    gap: 20px;
+    width: 350px;
+}
+
+#paginacion button{
+    padding: 20px;
+    font-size: larger;
+    border-radius: 15px;
+    color: white;
+    background-color: #043a41; 
+    border: 3px solid #4a6300;
+}
+
+.btn-back,.btn-next{
+    position: relative;
+    padding: 15px;
+    font-size: larger;
+    border-radius: 15px;
+    color: white;
+    background-color: #043a41; 
+    border: 2.5px solid #4a6300;
+}
+
+.btn-back{
+    left: 10px;
+}
+
+.btn-next{
+    right: 10px;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #040224;
+    padding: 20px;
+    height: 50px;
+    z-index: 30;
+    color: white;
+}
+
+
+#loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    right: 26.5px;
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+
+@media (min-width:900px){
+    #seccion{
+        display: grid;
+        column-gap: 100px;
+        row-gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    main{
+        min-height: 2500px;
+    }
+    #loader {
+        right: 78px;
+    }
+}
+
+@media (min-width:1200px){
+    #seccion{
+        display: grid;
+        column-gap: 100px;
+        row-gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+    }main{
+        min-height: 1800px;
+    }
+    #loader {
+        right: 127.5px;
+    }
+}
+
+@media (min-width:1500px){
+    #seccion{
+        display: grid;
+        column-gap: 100px;
+        row-gap: 20px;
+        grid-template-columns: repeat(4,1fr);
+    }
+    main{
+        min-height: 1450px;
+    }
+    #loader {
+        right: 180px;
+    }
+}

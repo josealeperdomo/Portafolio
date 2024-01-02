@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    height: 80px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+header button{
+    border: 1px solid black;
+    padding: 7px;
+    background-color: white;
+    color: black;
+}
+
+.botonOscuro{
+    border: 1px solid white;
+    padding: 7px;
+    background-color: black;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+main h1{
+    font-size: 20px;
+}
+
+.modoOscuro{
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#zona{
+    display: grid;
+    justify-items: center;
+    gap: 50px;
+}
+
+#zona img{
+    width: 250px;
+}
+
+#zona article{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+#seccion2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#options{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+#options img{
+    width: 100px;
+}
+
+#historialV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#seccion3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.borrarHistorial{
+    border: none;
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 50px;
+    border-top: 2px solid black;
+}
+
+.hover:hover{
+    cursor: pointer;
+}
+
+@media (min-width:900px){
+    #zona{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 0px;
+    }
+    #zona img{
+        width: 500px;
+    }
+}

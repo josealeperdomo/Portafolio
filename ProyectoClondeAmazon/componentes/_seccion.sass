@@ -1,0 +1,31 @@
+.partebaja
+    @include tamanocolor(120px, 100%, none)
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    border-top: solid 1px gray
+    border-bottom: solid 1px gray
+    p
+        font-size: 13px
+    button
+        font-size: 13px
+        font-weight: bold
+        padding: 3px 80px
+        border-radius: 4px
+        border-color: #f2cc6f
+        background: lineagradiente(#ffd671,#ffc32a,to bottom)
+        &:hover
+            cursor: pointer
+    span
+        font-size: 12px
+    a
+        font-size: 12px
+        text-decoration: none
+        color: rgb(11,119,138)
+        &:hover
+            cursor: pointer
+            color: #C7511F
+
+.separacion
+    @include tamanocolor(30px, 100%, none)

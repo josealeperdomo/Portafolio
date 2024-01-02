@@ -1,0 +1,75 @@
+main
+    @include tamanocolor(2000px, 100%, #e3e6e6)
+    background-image: url("https://m.media-amazon.com/images/I/616OBmoCmDL._SX3000_.jpg")
+    background-size: contain
+    background-repeat: no-repeat
+    display: grid
+    gap: 7px
+    grid-template-columns: repeat(4,1fr)
+    justify-items: center
+    padding-top:250px
+    article
+        @include tamanocolor(400px, 357px, white)
+        h1
+            padding: 20px 0px 0px 15px
+            font-size: 21px
+        .seccion1
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            padding-left: 17px
+            padding-top: 35px
+            gap: 20px 10px
+            a
+                text-decoration: none
+                font-size: 12px
+                color: black
+                &::after
+                    content: attr(data-name)
+                    padding-left: 15px
+            img
+                width: 150px
+        .vermas
+            text-decoration: none
+            color: rgb(11,119,138)
+            &:hover
+                text-decoration: underline
+                cursor: pointer
+                color: #C7511F
+        .vermasjuego
+            @include posicion(38px,20px,relative)
+        .vermascasa
+            @include posicion(13px,20px,relative)
+        .seccioncaja
+            display: flex
+            padding-left: 15px
+            padding-top: 10px
+            .unalinea
+                width: 325px
+                height: 300px
+            .doslineas
+                width: 325px
+                height: 274px
+            .ofertas
+                width: 300px
+                height: 240px
+                display: flex
+        .oferta
+            display: flex
+            padding: 10px 0px 0px 12px
+            gap: 8px
+            h2
+                font-size: 15px
+                background-color: rgb(204,12,57)
+                color: white
+                font-weight: 400px
+                padding: 3px 5px
+                border-radius: 5px
+            p
+                font-size: 11px
+                display: flex
+                align-items: center
+                color: rgb(204,28,76)
+        .ahorra
+            padding: 7px 0px 0px 12px
+        .comprar
+            @include posicion(5px,20px,relative)

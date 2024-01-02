@@ -1,0 +1,110 @@
+.inicio
+    @include tamanocolor(35px, 100%, rgb(55,71,90))
+    color: white
+    padding: 25px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: none
+    &:hover
+        background-color: rgb(77, 92, 110)
+        cursor: pointer
+.piso
+    @include tamanocolor(420px,100%, $colornava)
+    display: grid
+    gap: 90px
+    justify-content: center
+    padding-top: 40px
+    grid-template-columns: 100px 210px 250px 150px
+    border-bottom: solid #364150 2px
+    h1
+            font-size:16px
+            color: white
+            padding-bottom: 10px
+    ul
+        li
+            list-style: none
+            color: white
+            padding-bottom: 7px
+            a
+                text-decoration: none
+                color: white
+                font-weight: 100
+                &:hover
+                    text-decoration: underline
+
+.pisodos
+    @include tamanocolor(100px, 100%, $colornava)
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 100px
+    .logo
+        img
+            width: 85px
+            @include posicion(10px,0px,relative)
+    .selectores
+        select
+            height: 32px
+            @include tamanocolor(30px, 150px, $colornava)
+            color: white
+            border: solid white 0.5px
+            border-radius: 4px
+            &:hover
+                cursor: pointer
+        button
+            height: 32px
+            @include tamanocolor(30px, 150px, $colornava)
+            color: white
+            border: solid white 0.5px
+            border-radius: 4px
+            &:hover
+                cursor: pointer
+        .dolares
+            @include tamanocolor(30px, 230px, $colornava)
+        .estados
+            @include tamanocolor(30px, 130px, $colornava)
+            @include posicion(11.2px, 0px, relative)
+            span
+                @include posicion(-10px, 0px, relative)
+            img
+                width: 30px
+        
+.pisotres
+    @include tamanocolor(530px, 100%, $colornav)
+    display: grid
+    grid-template-columns: 90px 150px 110px 150px 150px 150px
+    grid-template-rows:30px 40px 40px 18px 20px
+    align-content: center
+    justify-content: center
+    gap: 60px
+    section
+        @include posicion(-40px, 0px, relative)
+        a
+            font-size: 11px
+            text-decoration: none
+            color: #8e8e76
+            &:hover
+                text-decoration: underline
+        h3
+            font-size: 12px
+            color: #d5d6c5
+
+.pisocuatro
+    @include tamanocolor(60px, 100%, $colornav)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    .condiciones
+        display: flex
+        gap: 20px
+        a
+            color: #dddddd
+            text-decoration: none
+            font-size: 13px
+            &:hover
+                text-decoration: underline
+    span
+        color: #dddddd
+        font-size: 13px

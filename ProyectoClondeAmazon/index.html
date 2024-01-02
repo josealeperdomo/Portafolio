@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clon</title>
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/amazon_tile_logo_icon_170594.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-principal" id="iniciar">
+       <button class="amazonlogo">
+        <a href="#"><img src="https://www.nicepng.com/png/full/16-167642_amazon-logo-amazon-logo-white-text.png" class="amazonlogoimg" alt=""></a>
+        </button>
+        <button class="envio">
+            <img src="https://icon-library.com/images/location-icon-white-png/location-icon-white-png-20.jpg" alt="" >
+            <span>Enviar a</span>
+            <h3>Venezuela</h3>
+        </button>
+        
+        <select name="departamentos" id="" class="departamentos">
+            <option value="">Todos</option>
+            <option value="">Artes y artesanías</option>
+            <option value="">Automotríz</option>
+            <option value="">Bebé</option>
+            <option value="">Belleza y cuidado personal</option>
+            <option value="">Cine y TV</option>
+            <option value="">Computadoras</option>
+            <option value="">Deportes y actividades al aire libre</option>
+            <option value="">Electrónicos</option>
+            <option value="">Herramientas y mejoramiento del hogar</option>
+            <option value="">Hogar y cocina</option>
+            <option value="">Industrial y cientifico</option>
+            <option value="">Insumos para mascotas</option>
+            <option value="">Juguetes y juegos</option>
+            <option value="">Moda</option>
+        </select>
+            <input type="text" class="buscador" placeholder="Buscar Amazon">
+            <button class="buscar"><img src="https://cdn-icons-png.flaticon.com/512/16/16492.png" alt=""></button>
+            <div class=".focus" id="focus"></div>
+            <button class="idioma"><img src="https://static.vecteezy.com/system/resources/previews/016/016/814/original/united-states-flag-free-png.png" alt="" class="usa"><span>ES</span><img src="https://icons.veryicon.com/png/o/miscellaneous/simple-and-round-line-mark/down-arrow-56.png" alt="" class="flecha"></button>
+            <button class="hola"><span>Hola, identifícate</span>
+            <h3>Cuenta y Listas</h3>
+            </button>
+            <button class="devoluciones"><span>Devoluciones</span><h3>y Pedidos</h3></button>
+            <button class="carrito"><img src="https://icon-library.com/images/white-shopping-cart-icon-png/white-shopping-cart-icon-png-8.jpg" alt=""><h3>Carrito</h3></button>
+    </nav>
+    
+    <nav class="nav-abajo">
+        
+        <button class="nav-abajo-1 navbajo">            <input type="checkbox" name="todo" id="todo" class="todo">
+        <label for="todo" class="tresrayas">
+            <img src="https://www.redeemclinic.co.uk/wp-content/uploads/2016/05/threelines.png"alt=""></label>
+            <label for="todo" class="equis"><img src="https://www.nicepng.com/png/full/128-1281855_buy-online-transparent-white-x-png.png" alt=""></label>
+        <aside class="">
+            <section class="header">
+                <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="">
+                <h1>Hola, Identifícate</h1>
+            </section>
+           <article>
+            <h1>Contenido Y Dispositivos Digitales</h1>
+            <ul>
+                <li>Amazon Music</li>
+                <li>E-Readers Kindle y Libros</li>
+                <li>Amazon Appstore</li>
+            </ul>
+           </article>
+           <article class="contenidoaside"> 
+            <h1>Buscar Por Departamento</h1>
+            <ul>
+                <li>Electrónicos</li>
+                <li>Computadoras</li>
+                <li>Smart Home</li>
+                <li>Arte Y Artesania</li>
+                <li>Ver Todo</li>
+            </ul>
+           </article>
+           <article class="contenidoaside"> 
+            <h1>Programas Y Funcionalidades</h1>
+            <ul>
+                <li>Tarjetas de Regalo</li>
+                <li>Compras por interés</li>
+                <li>Amazon Live</li>
+                <li>Tienda Internacional</li>
+                <li>Ver Todo</li>
+            </ul>
+           </article>
+           <article class="contenidoaside"> 
+            <h1>Ayuda Y Configuración</h1>
+            <ul>
+                <li>Tu Cuenta</li>
+                <li>🌐 Español</li>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/016/016/814/original/united-states-flag-free-png.png" alt="">Estados Unidos</li>
+                <li>Servicio al Cliente</li>
+                <li>Identifícate</li>
+            </ul>
+           </article>
+        </aside>
+        Todo
+        <div id="asaid"></div>
+        <button class="nav-abajo-2 navbajo">Ofertas del Día</button>
+        <button class="nav-abajo-3 navbajo">Servicio al Cliente</button>
+        <button class="nav-abajo-4 navbajo">Listas</button>
+        <button class="nav-abajo-5 navbajo">Tarjetas de Regalo</button>
+        <button class="nav-abajo-6 navbajo vender">Vender</button>
+    </nav>
+    
+    <main>
+        <article >
+            <h1>Accesorios para juegos</h1>
+            <section class="seccion1">
+                <a href="" data-name="Audifonos"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""></a>
+                <a href=""data-name="Teclados"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt=""></a>
+                <a href="" data-name="Ratones"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""></a>
+                <a href="" data-name="Sillas"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt=""></a>
+            </section>
+            <a href="" class="vermas vermasjuego">Ver más</a>
+        </article>
+        <article>
+            <h1>Juguetes por menos de USD 30
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_379x304_1X_en_US._SY304_CB609318944_.jpg" alt=""class="unalinea"></a></section>
+            <a href="" class="vermas comprar">Comprar ahora</a>
+        </article>
+        <article><h1>Hogar y Cocina por menos de USD 30
+        </h1>
+        <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469391_2584745_379x304_1X_en_US._SY304_CB609304299_.jpg" alt="" class="doslineas" ></a></section>
+        <a href="" class="vermas comprar">Comprar ahora</a></article>
+        <article>
+        <h1>Salud y Cuidado Personal
+
+        </h1>
+        <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg" alt=""class="unalinea"></a></section>
+        <a href="" class="vermas comprar">Comprar ahora</a></article>
+        <article>
+            <h1>Mejores Ofertas
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://m.media-amazon.com/images/I/51z3ciz6zjL._AC_SY230_.jpg" alt=""class="ofertas"></a></section>
+            <div class="oferta">
+                <h2>Hasta un -28%</h2>
+                <p>Con Prime</p>
+            </div>
+            <div class="ahorra">
+                <span>Ahorra en Amazon y más</span>
+            </div>
+            <a href="" class="vermas comprar">Compra todas las ofertas</a></article>
+
+        </article>
+        <article>
+            <h1>Vestidos
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/Fuji_dash_dress_2X._SY608_CB626369146_.jpg" alt=""class="unalinea"></a></section>
+            <a href="" class="vermas comprar">Comprar ahora</a>
+        </article>
+        <article>
+            <h1>Mejoras fáciles para espacios elevados</h1>
+            <section class="seccion1">
+                <a href="" data-name="Cestas y canastos"><img src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_372x232._SY232_CB594237035_.jpg" alt=""></a>
+                <a href=""data-name="Herramientas"><img src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_372x232._SY232_CB594237035_.jpg" alt=""></a>
+                <a href="" data-name="Muebles decorativos"><img src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_AccentFurniture_D_Quad_372x232._SY232_CB594237035_.jpg" alt=""></a>
+                <a href="" data-name="Tapizado y pintura"><img src="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Hallway_D_Quad_372x232._SY232_CB594237035_.jpg" alt=""></a>
+            </section>
+            <a href="" class="vermas vermascasa">Ver más</a>
+        </article>
+        <article>
+            <h1>Click here to shop in English
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/January/Fuji_Dash_ClicktoShop_EN_v5_2x._SY608_CB661261453_.jpg" alt=""class="unalinea"></a></section>
+            <a href="" class="vermas comprar">Change your language preference</a>
+        </article>
+        <article>
+            <h1>Descubre las nuevas tendencias en moda
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2023/March/mp_20230219_ff_desktopsinglecategory_desktop_758x608._SY608_CB612846074_.jpg" alt="" class="doslineas" ></a></section>
+            <a href="" class="vermas comprar">Más información</a>
+        </article>
+        <article>
+            <h1>Hogar y Cocina
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/kitchenimage2X._SY608_CB641631328_.jpg" alt=""class="unalinea"></a></section>
+            <a href="" class="vermas comprar">Ver mas</a>
+        </article>
+        <article><h1>Ideas para renovar tu hogar
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/home/THILGMA/SpringEvent2023/XCM_CUTTLE_1559454_3018199_379x304_1X_en_US._SY304_CB592739737_.jpg" alt=""class="unalinea"></a></section>
+            <a href="" class="vermas comprar">Compra mejoras para tu cocina</a></article>
+        <article>
+            <h1>Comprar Artículos para tus Mascotas
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Pets_1X._SY304_CB639746743_.jpg" alt="" class="doslineas" ></a></section>
+            <a href="" class="vermas comprar">Ver más</a>
+        </article>
+        <article>
+            <h1>Ofertas en Herramientas y mejoras para el hogar
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/home/THILGMA/Holiday2022/Graphics/XCM_CUTTLE_1475305_2610205_379x304_1X_en_US._SY304_CB608600856_.jpg" alt="" class="doslineas" ></a></section>
+            <a href="" class="vermas comprar">Comprar ahora</a>
+        </article>
+        <article><h1>E-readers Kindle
+        </h1>
+        <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Desktop_Dash_Kindle_1x._SY304_CB639752818_.jpg" alt=""class="unalinea"></a></section>
+        <a href="" class="vermas comprar">Comprar ahora</a></article>
+        <article>
+            <h1>Mercancía de juegos</h1>
+            <section class="seccion1">
+                <a href="" data-name="Vestimenta"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Apparel_1x._SY116_CB667159060_.jpg" alt=""></a>
+                <a href=""data-name="Sombreros"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Hat_1x._SY116_CB667159060_.jpg" alt=""></a>
+                <a href="" data-name="Figuras de acción"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Figure_1x._SY116_CB667159060_.jpg" alt=""></a>
+                <a href="" data-name="Tazas de desayuno"><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mug_1x._SY116_CB667159063_.jpg" alt=""></a>
+                </section>
+                <a href="" class="vermas vermasjuego">Ver más</a>
+        </article>
+        <article>
+            <h1>Comprar rastreadores de actividad y relojes inteligentes
+            </h1>
+            <section class="seccioncaja"><a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg" alt="" class="doslineas" ></a></section>
+            <a href="" class="vermas comprar">Comprar ahora</a>
+        </article>
+    </main>
+    <section class="partebaja">
+        <p>Ver recomendaciones personalizadas</p>
+        <button>identifícate</button>
+        <div>
+        <span>¿Eres un cliente nuevo?</span>
+        <a href="">Empieza aquí.</a></div>
+    </section>
+    <section class="separacion"></section>
+    <a href="#iniciar"><button class="inicio">Inicio de Página</button></a>
+    <footer class="piso">
+        <section>
+            <h1>Conócenos</h1>
+            <ul>
+                <li><a href="">Trabaja en amazon</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Acerca de Amazon</a></li>
+                <li><a href="">Relaciones con los Inversinistas</a></li>
+                <li><a href="">Dispositivos Amazon</a></li>
+                <li><a href="">Amazon Science</a></li>
+            </ul>
+        </section>
+        <section>
+            <h1>Gana Dinero con Nosotros</h1>
+            <ul>
+                <li><a href="">Vender productos en Amazon</a></li>
+                <li><a href="">Vende en Amazon Business</a></li>
+                <li><a href="">Vender aplicaciones en Amazon</a></li>
+                <li><a href="">Programa de Afiliados</a></li>
+                <li><a href="">Anuncia tus productos</a></li>
+                <li><a href="">Publica tu Libro en Kindle</a></li>
+                <li><a href="">Habilita un Amazon Hub</a></li>
+                <li><a href="">> Ver más Gana Dinero con Nosotros</a></li>
+            </ul>
+        </section>
+        <section>
+            <h1>Productos de Pago de Amazon</h1>
+            <ul>
+                <li><a href="">Compra con Puntos</a></li>
+                <li><a href="">Recarga tu Saldo</a></li>
+                <li><a href="">Conversor de divisas de Amazon</a></li>
+            </ul>
+        </section>
+        <section>
+            <h1>Podemos Ayudarte</h1>
+            <ul>
+                <li><a href="">Amazon y el COVID-19</a></li>
+                <li><a href="">Tu Cuenta</a></li>
+                <li><a href="">Tus Pedidos</a></li>
+                <li><a href="">Tarifas de Envío y Políticas</a></li>
+                <li><a href="">Devoluciones y Reemplazos</a></li>
+                <li><a href="">Administrar Contenido y Dispositivos</a></li>
+                <li><a href="">Amazon Assistant</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+        </section>
+    </footer>
+    <footer class="pisodos">
+        <section class="logo"><a href=""><img src="https://www.nicepng.com/png/full/16-167642_amazon-logo-amazon-logo-white-text.png" alt=""></a></section>
+        <section class="selectores">
+            <select name="" id="">
+                <option value="">🌐 Español - ES</option>
+                <option value="">🌐 English - EN</option>
+                <option value="">🌐 العربية - AR                 </option>
+                <option value="">🌐 Deutsch - DE</option>
+                <option value="">🌐 עברית - HE</option>
+                <option value="">🌐 한국어 - KO</option>
+                <option value="">🌐 Português - PT</option>
+            </select>
+            <button class="dolares">$ USD - dólar estadounidense</button>
+            <button class="estados"><img src="https://static.vecteezy.com/system/resources/previews/016/016/814/original/united-states-flag-free-png.png" alt=""><span>Estados Unidos</span></button>
+        </section>
+    </footer>
+    <footer class="pisotres">
+        <section>
+            <a href="">
+            <h3>Amazon Music</h3>
+            Reproduce millones de canciones</a>
+            </section>
+        <section>
+            <a href="">
+            <h3>Amazon advertising</h3>
+            Encontrar atraer y captar clientes</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>6am</h3>
+            Descubre ofertas en marcas de moda</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>AbeBooks</h3>
+            Libros, arte & artículos de colección</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>ACX</h3>
+            Editorial de Audiolibros Hecho Fácil</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Venda en Amazon</h3>
+            Comience una cuenta de venta</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Amazon Business</h3>
+            Todo para tu negocio</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Amp</h3>
+            Sé el anfitrion de tu propio show de radio en vivo con la música que amas</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>AmazonGlobal</h3>
+            Pedidos de Envío Internacional</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Servicios para el Hogar</h3>
+            de Amazon Profesionales Elegidos a Mano Garantía de Satisfacción</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Amazon Web Services</h3>
+            Servicios de cómputo en nube escalable</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Audible</h3>
+            Escucha Libros e Interpretaciones de Audio Originales</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Box Office Mojo</h3>
+            Encuentra películas Datos de taquilla</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Goodreads</h3>
+            Análisis de libros y recomendaciones</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>IMDb</h3>
+            Películas, TV y Celebridades</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>IMDbPro</h3>
+            Obtén información de entretenimiento que los profesionales necesitan</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Kindle Direct Publishing</h3> Publica tu libro en papel y digital de manera independiente</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Prime Video Direct</h3>
+            Distribución de Video Sin Esfuerzo</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Shopbop</h3>
+            Diseñador Marcas de Moda</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Woot!</h3>
+            Descuentos y travesuras</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Zappos</h3>
+            Zapatos y ropa</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Ring</h3>
+            Casa Inteligente Sistemas de Seguridad</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Wifi eero</h3>
+            Video 4K en tiempo real en todas las habitaciones</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Blink</h3>
+            Seguridad inteligente para todos los hogares</a>
+        </section>
+        <section class="invisible"></section>
+        <section>
+            <a href="">
+            <h3>Neighbors App</h3>
+            Alertas de seguridad y delitos en tiempo real</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>Suscríbete con Amazon</h3>
+            a los servicios de suscripción de "Discover & try"</a>
+        </section>
+        <section>
+            <a href="">
+            <h3>PillPack</h3>
+            Pharmacy simplificado</a>
+        </section>
+        <section></section>
+        <section></section>
+    </footer>
+    <fotter class="pisocuatro">
+        <article class="condiciones"><a href="">Condiciones de uso</a>
+        <a href="">Aviso de privacidad</a>
+        <a href="">Tus opciones de privacidad de los anuncios</a></article>
+        <article class="inc"><span>© 1996-2023 Amazon.com, Inc. o sus afiliados</span></article>
+    </fotter>
+</body>
+</html>

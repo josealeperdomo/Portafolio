@@ -1,0 +1,143 @@
+.nav-principal
+    @include tamanocolor(58px,100%,$colornav)
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 20px 20px 20px 20px
+    gap: 6px
+    .amazonlogo
+        @include boton-nav(flex, center, flex-start)
+        padding-right: 8px
+        @include tamanocolor(48px, 120px, $colornav)
+        .amazonlogoimg
+            @include tamanocolor(33px,100%, none)
+    .envio
+        @include tamanocolor(48px, 130px, $colornav)
+        @include boton-nav(flex, center, center)
+        position: relative
+        img
+            @include tamanocolor(15px, 20px, none)
+            @include posicion(20px, 0px)
+        span
+            @include posicion(9px, 22px)
+            font-size: 12px
+            color: #bdc4c3
+        h3
+            @include posicion(21px, 22px)
+            font-size: 13px
+            color: white
+    .departamentos
+        @include tamanocolor(40px, 63px, #e6e6e6)
+        border-radius: 5px 0px 0px 5px
+        margin-left: 5px
+        font-size: 12px
+        &:hover
+            cursor: pointer
+    .buscador
+        @include tamanocolor(40px, 50%, none)
+        @include posicion(0px,-10px, relative)
+        font-size: 15px
+        &:focus
+            outline: none
+            border: solid rgb(255, 199, 56) 4px
+        &:focus ~ #focus
+            display: flex
+    .buscar
+        @include tamanocolor(40px, 53px, #febd69)
+        @include posicion(0px,-17px, relative)
+        border-radius: 0px 5px 5px 0px
+        border: none 
+        &:hover
+            background-color: #e4ab62
+            cursor: pointer
+        img
+            width: 23px
+    .idioma
+        @include tamanocolor(48px,60px,$colornav)
+        display: flex
+        @include boton-nav(flex,center,space-around)
+        .usa
+            @include tamanocolor(35px, 25px, none)
+        span
+            color: white
+            font-weight: bold
+        .flecha
+            @include tamanocolor(10px,10px,none)
+    .hola
+        @include tamanocolor(48px, 135px, $colornav)
+        @include boton-nav(flex,center,center)
+        flex-direction: column
+        color: white
+        padding-top: 15px
+        span
+            @include posicion(-7px, 0px, relative)
+            font-size: 12px
+        h3
+            @include posicion(-7px, 0px, relative)
+            font-size: 13.5px
+    .devoluciones
+        @include tamanocolor(48px, 85px, $colornav)
+        @include boton-nav(flex,center,center)
+        flex-direction: column
+        color: white
+        span
+            font-size: 12px
+        h3
+            font-size: 14px
+    .carrito
+        @include tamanocolor(48px, 100px, $colornav)
+        @include boton-nav(flex,center,space-around)
+        color: white
+        img
+             @include tamanocolor(30px,30px,none)
+
+.nav-abajo
+    @include tamanocolor(38px, 100%, $colornava)
+    display: flex
+    padding: 0px 10px
+    .navbajo
+        color: white
+        background-color: $colornava
+        padding: 12px 10px
+        font-size: 14px
+        @include boton-nav(flex,center,center)
+        flex-direction: row
+        
+.nav-abajo
+    input
+        display: none
+    .equis
+        display: none
+    .tresrayas
+        @include posicion(1px, -15px,relative)
+        img
+            height: 30px
+            width: 40px
+        
+    .todo
+        &:checked ~ aside
+            display: flex
+        &:checked ~ label
+            @include posicion(10px,355px, fixed)
+        &:checked ~ #asaid
+            display: flex
+        &:checked ~ .tresrayas
+            display: none
+        &:checked ~ .equis
+            display: flex
+            width: 100px
+
+    label
+        z-index: 11
+        width: 20px
+        &:hover
+            cursor: pointer
+    img
+        width: 20px
+
+#focus
+    @include tamanocolor(3350px, 100%, rgba(0,0,0,0.5))
+    display: none
+    @include posicion(0, 0, absolute)
+    top: 58px
+    z-index: 12

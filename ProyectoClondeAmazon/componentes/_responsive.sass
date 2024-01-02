@@ -1,0 +1,153 @@
+@media only screen and (min-width: 2000px)
+    main
+        padding-left: 300px
+        padding-right: 300px
+.nav-principal
+    .buscador
+        width: 80%
+    
+@media only screen and (min-width: 1600px) and (max-width: 2000px)
+    main
+        padding-left: 100px
+        padding-right: 100px
+
+@media only screen and (max-width: 1480px)
+    main
+        grid-template-columns: repeat(3,1fr)
+        height: 2800px
+    .nav-principal
+        .buscador
+            width: 44%
+    #asaid
+        height: 4210px
+    #focus
+        height: 4150px
+
+@media only screen and (max-width: 1100px)
+    .nav-principal
+        .devoluciones
+            display: none
+        .departamentos
+            width: 50px
+        .buscador
+            width: 40%
+    main
+        grid-template-columns: repeat(2,1fr)
+        height: 3800px
+        padding-top: 180px
+    .piso
+        gap: 15px
+        grid-template-columns: 100px 180px 200px 150px
+    .pisotres
+        height: 720px
+        grid-template-columns: 80px 90px 70px 90px 90px 80px
+        grid-template-rows:70px 100px 100px 80px 20px
+        gap: 40px
+    #asaid
+        height: 5400px
+    #focus
+        height: 5340px
+
+@media only screen and (max-width: 755px)
+    .nav-principal
+        .hola
+            display: none
+    main
+        grid-template-columns: repeat(1,1fr)
+        height: 7100px
+        padding-top: 120px
+        article
+            @include tamanocolor(400px, 400px, white)
+            .seccioncaja
+                .unalinea
+                    width: 368px
+                .doslineas
+                    width: 368px
+                .ofertas
+                    width: 360px
+    .pisotres
+        height: 900px
+        grid-template-columns: 80px 90px 70px 90px 90px
+        grid-template-rows:70px 100px 100px 120px 80px 80px
+        gap: 40px
+        .invisible
+            display: none
+    .piso
+        gap: 25px
+        grid-template-columns: 90px 120px 70px 80px
+        height: 550px
+    .pisodos
+        flex-direction: column
+        gap: 20px
+        height: 100px
+    #asaid
+        height: 9000px
+    #focus
+        height: 8940px
+
+@media only screen and (max-width: 625px)
+    .nav-principal
+        .envio
+            display: none
+    .nav-abajo
+        height: 50px
+        .vender
+            display: none
+    .piso
+        gap: 50px
+        grid-template-columns: 100px 200px
+        grid-template-rows: repeat(2,1fr)
+        height: 800px
+    .pisodos
+        flex-direction: column
+        gap: 20px
+        height: 180px
+    .pisotres
+        height: 1100px
+        grid-template-columns: 80px 90px 70px 90px
+        grid-template-rows:70px 100px 100px 120px 110px 80px
+        gap: 40px
+        padding-top: 100px
+    #asaid
+        height: 9545px
+    #focus
+        height: 9480px
+
+@media only screen and (max-width: 450px)    
+    .nav-abajo
+        .todo
+            &:checked ~ label
+                @include posicion(10px,300px, fixed)
+    aside
+        width: 300px
+        article
+            h1
+                height: 120px
+    main
+        article
+            @include tamanocolor(400px, 335px, white)
+            .seccioncaja
+                .unalinea
+                    width: 300px
+                .doslineas
+                    width: 300px
+                .ofertas
+                    width: 300px
+    .piso
+        gap: 50px
+        grid-template-columns: 100px 200px
+        grid-template-rows: repeat(2,1fr)
+        height: 850px
+    .pisodos
+        flex-direction: column
+        gap: 20px
+        height: 180px
+    .pisotres
+        height: 1500px
+        grid-template-columns: 80px 90px 70px
+        grid-template-rows:70px 100px 100px 120px 110px 110px 80px
+        gap: 40px
+    #asaid
+        height: 10000px
+    #focus
+        height: 9940px
